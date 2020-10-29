@@ -2,15 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Lab 3</title>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="code.js"></script>
+<!-- This should be in css -->
+    <style>
+        .output{display:none;}
+        .outputPizza{display:none;}
+    </style>
+<!-- This should be in css -->
 </head>
 <body>
 <h1>Library Calculator</h1>
-<button onclick="lateFeeLibrary()">Calculate my late fees</button>
+
+<label for="numBooks">Enter number of books being returned: </label>
+<input type="number" id="numBooks"><br><br>
+
+<label for="numDVDS">Enter number of DVDs being returned: </label>
+<input type="number" id="numDVDS"><br><br>
+
+<button id="libraryCalc">Calculate Library Fees</button>
+<p class="output">Your total charges are $<span id="displayCharges"></span></p>
 
 <h1>Pizza cost splitter</h1>
-<button onclick="pizzaCostSplitter()">Calculate how much each person pays</button>
+
+<label for="numToppings">Enter number of toppings: </label>
+<input type="number" id="numToppings"><br><br>
+
+<label for="numPeople">Enter number of people sharing pizza: </label>
+<input type="number" id="numPeople"><br><br>
+
+<button id="pizzaCalc">Calculate per person cost for pizza</button>
+<p class="outputPizza">Cost per person is $<span id="eachPersonCost"></span></p>
 
 </body>
 </html>
